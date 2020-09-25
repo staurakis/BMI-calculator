@@ -7,13 +7,16 @@ weight_kg = float(input("Please enter your weight in kg: "))
 
 def bmifunc(name, height_m, weight_kg):
     bmi = weight_kg / (height_m ** 2)
-    print("bmi:",bmi)
+    print(" ")
+    print ("The results of the input data and the calculations are the following: ")
+    print("BMI :",bmi)
     if bmi < 25:
         if bmi < 18.5:
-            return name + " is underweight"
+            return name + " you are underweight"
         else:
-            return name + " is normal weight!!! "
+            return name + " your weight is normal !!! "
     else:
-        return name + " is overweight"
+        return name + " you are overweight"
 result = bmifunc(name, height_m, weight_kg)
 print(result)
+print(" ")
